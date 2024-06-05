@@ -1,0 +1,126 @@
+.home
+{
+background-color: #F7ECDE;
+height: 100vh;
+padding-top: 10px;
+
+}
+.header
+{position: relative;
+    z-index: 1000;
+   
+}
+.header h1
+{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(53, 46, 40);
+    isolation: isolate
+    
+  
+}
+.header h1::after
+{
+    
+    content: "";
+position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #FEC260;
+   
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition:all 0.5s;
+
+    
+}
+.header h1:hover::after
+{
+    height: 40px;
+}
+.myform
+{
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(33, 37, 41);
+}
+
+
+.book h2,i
+{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+}
+.submit
+{
+    
+    
+    transform: translate(400%);
+    width: 150px;
+   
+}
+#alarm
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    border:solid 3px white;
+    border-radius: 5px;
+z-index: 10;
+box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175)
+
+}
+#alarm span
+{
+    margin-top: 25px;
+    
+    width: 20px;
+    height: 20px;
+}
+#alarm button
+{margin-top: 25px;
+    color: black;
+    margin-left: 330px;
+
+
+}
+#alarm .rule
+{ font-family: "PT Sans Caption", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(33, 37, 41);
+}
+.visit button
+{
+    background-color: #8a9e23dc;
+    color: white;
+}
+.visit a
+{
+    color: white;
+    text-decoration: none;
+}
+.visit button:hover
+{
+    background-color: #8a9e23;
+    color: white;
+}
+.bookmarkbody
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+    height: 350px;
+    border-top: dotted 2px black;
+    border-bottom: dotted 2px black;
+}

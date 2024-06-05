@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="home">
+<div class="container">
+    <div class="header m-auto text-center mt-5 w-25  ">
+        <h1>Bookmarker</h1>
+    </div>
+
+
+<div class="bookmarkbody">
+<div class="book m-auto text-center w-50 pt-4 pb-4">
+    <h2><i class="fa-solid fa-bookmark me-1" style="color: #3FA55B;"></i>Bookmark your favorite sites <i class="fa-solid fa-bookmark ms-1" style="color: #B2AC49;"></i></h2>
+</div>
+
+<div class="myform">
+    <div class=" mb-3">
+        <label for="Name" class="mb-2">   <i class="fa-solid fa-book-bookmark me-2 "></i>Site Name</label>
+        <input type="text" class="form-control mb-2" id="Name" placeholder="Bookmark Name">
+       
+      </div>
+      <div class="">
+        <label for="URL" class="mb-2"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+        <input type="text" class="form-control mb-2" id="URL" placeholder="Website URL">
+       
+      </div>
+      <button onclick="add()" class="btn bg-danger text-white mt-4 submit   ">Submit</button>
+</div>
+</div>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Index</th>
+        <th scope="col">Website Name</th>
+        <th scope="col">Visit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      
+    
+    </tbody>
+  </table>
+
+
+</div>
+<div id="testalarm">
+
+</div>
+</div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/java.js"></script>
+</body>
+</html>
