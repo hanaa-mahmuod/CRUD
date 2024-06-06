@@ -83,7 +83,9 @@ for(var i=0;i<arr.length;i++)
         <td>${arr[i].sitename}</td>
         <td class="visit"><button   type="button"   class="btn "><i class="fa-solid fa-eye"></i> <a href="${arr[i].siteurl}">Visit</a> </button></td>
         <td ><button onclick="del(${i})" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</button></td>
-      </tr>`
+        <td ><button class="btn btn-info text-white" onclick="update(${i})"><i class="fa-solid fa-wrench pe-1"></i>Update</button></td>
+     
+        </tr>`
 
     }
 
@@ -104,4 +106,45 @@ show();
 function hidealarm()
 {
     document.getElementById('testalarm').innerHTML="";
+}
+function update(a)
+{
+    nname.value=arr[a].sitename
+    url.value=arr[a].siteurl
+    document.getElementById("up").innerHTML=`<button onclick="showupdate(${a})" class="btn btn-secondary">UPDATE</button>`;
+    document.getElementById("sub").innerHTML='';
+
+
+
+}
+function showupdate(a){
+    add();
+    del(a);
+show();
+
+
+}
+function searchItem(part)
+
+{
+    
+   
+    var cartona='';
+    for(var i=0;i<arr.length;i++)
+        {
+            if(arr[i].sitename.toLowerCase().includes(part.toLowerCase()))
+                {
+                   
+                  cartona+=`<tr>
+                  <th scope="row">${i+1}</th>
+                  <td>${arr[i].sitename}</td>
+                  <td class="visit"><button   type="button"   class="btn "><i class="fa-solid fa-eye"></i> <a href="${arr[i].siteurl}">Visit</a> </button></td>
+                  <td ><button onclick="del(${i})" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</button></td>
+                  <td ><button class="btn btn-info text-white" onclick="update(${i})"><i class="fa-solid fa-wrench pe-1"></i>Update</button></td>
+               
+                  </tr>`
+                }
+
+        }
+        document.getElementById("table-body").innerHTML=cartona;
 }

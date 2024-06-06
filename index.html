@@ -40,7 +40,13 @@
         <input type="text" class="form-control mb-2" id="URL" placeholder="Website URL">
        
       </div>
-      <button onclick="add()" class="btn bg-danger text-white mt-4 submit   ">Submit</button>
+      <div class="form-floating">
+        <input onkeyup="searchItem(this.value)" type="text" class="form-control mt-3 w-25 h-25 mb-2"  id="searchitem" placeholder="search">
+        <label for="searchitem">search</label>
+      </div>
+      <div id="up"></div>
+      <div id="sub"><button onclick="add()" class="btn bg-danger text-white mt-4 submit   ">Submit</button></div>
+      
 </div>
 </div>
 
@@ -51,6 +57,7 @@
         <th scope="col">Website Name</th>
         <th scope="col">Visit</th>
         <th scope="col">Delete</th>
+        <th scope="col">Update</th>
       </tr>
     </thead>
     <tbody id="table-body">
